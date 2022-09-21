@@ -32,7 +32,7 @@ jobs:
           sudo apt-get install php -y
       - name: set config
         run: |
-          sudo echo "appid="${{ secrets.appid }} > config.ini
+          sudo echo "appid="${{ secrets.appid }} >> config.ini
           sudo echo "appsecret="${{ secrets.APPSECRET }} >> config.ini
           sudo echo "hefengkey="${{ secrets.HEFENGKEY }} >> config.ini
           sudo echo "hefengcity="${{ secrets.HEFENGCITY }} >> config.ini
